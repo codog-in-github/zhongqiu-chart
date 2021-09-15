@@ -1,7 +1,6 @@
 import './assset/less/public.less'
 
 import Echarts from 'echarts'
-import { options } from 'less';
 
 const echarts = Echarts.init(document.getElementById('app'));
 
@@ -151,6 +150,8 @@ const option = {
         text
     ],
 };
+
+document.body.removeChild(document.getElementById('loading'))
 echarts.setOption(option);
 
 let count = 0;
